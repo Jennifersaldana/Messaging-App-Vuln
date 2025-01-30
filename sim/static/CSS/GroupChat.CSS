@@ -1,0 +1,58 @@
+/* Container for dots and the menu */
+.menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style for the dots */
+.dots {
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Hide the dots by default */
+}
+
+/* Hidden menu */
+.menu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Show dots when hovering over the message box */
+.message-box:hover .dots {
+  display: inline-block;
+}
+
+/* Style for menu items */
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  padding: 5px 10px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.menu ul li a:hover {
+  color: #007BFF;
+}
+
+/* Prevent hover effect on dots when a menu is open */
+.menu-container.open .dots {
+  display: none; /* Prevent hovering when menu is open */
+}
+
+.menu-container.open:hover .dots {
+  display: none;
+}

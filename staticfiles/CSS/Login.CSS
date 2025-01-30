@@ -1,0 +1,62 @@
+:root {
+    --yale-blue: #134074ff;
+    --berkeley-blue: #13315cff;
+    --oxford-blue: #0b2545ff;
+    --powder-blue: #8da9c4ff;
+    --mint-cream: #eef4edff;
+}
+
+body {
+    background-color: var(--yale-blue);
+    color: var(--mint-cream);
+    display: flex;                
+    justify-content: center;      
+    align-items: center; /* Center vertically in the viewport */
+    height: 100vh; /* Ensure body takes full height */
+    margin: 0;
+}
+
+.loginBox {
+    display: flex;
+    flex-direction: column;
+    height: 90vh; /* Adjusts height for the chat container */
+    width: 30%;
+    background-color: var(--powder-blue); 
+    border: 2px solid var(--oxford-blue);     
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    color: var(--mint-cream);
+}
+
+input[type="text"], input[type="password"] {
+    width: 80%; /* Adjust width to be wider */
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px auto; /* Center horizontally and add margin for spacing */
+    display: block; /* Ensure it's a block element for margin auto to work */
+}
+
+input[type="password"] {
+    /* Optional: Style specifically for password input */
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+}
+
+.form-submit-button {
+    background: #B9DFFF;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+    }
+    .form-submit-button:hover {
+    background: #016ABC;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+    }

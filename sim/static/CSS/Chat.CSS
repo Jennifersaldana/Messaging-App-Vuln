@@ -1,0 +1,77 @@
+:root {
+    --yale-blue: #134074ff;
+    --berkeley-blue: #13315cff;
+    --oxford-blue: #0b2545ff;
+    --powder-blue: #8da9c4ff;
+    --mint-cream: #eef4edff;
+}
+
+body {
+    background-color: var(--oxford-blue);
+    color: var(--mint-cream);
+    display: flex;                
+    justify-content: center;      
+    margin: 0;
+}
+
+.chatBox {
+    display: flex;
+    flex-direction: column;
+    height: 90vh; /* Adjusts height for the chat container */
+    width: 30%;
+    background-color: var(--berkeley-blue); 
+    border: 2px solid var(--mint-cream);     
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.chatContent {
+    flex-grow: 1;
+    overflow-y: auto; /* Enables scrolling if content exceeds height */
+    padding: 10px;
+}
+
+.chatBubbleOther {
+    width: 70%;
+    background-color: var(--powder-blue);
+    border: 2px solid var(--mint-cream);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px 0;
+    align-self: flex-start; /* Align other user's bubble to the left */
+}
+
+.chatBubbleUser {
+    width: 70%;
+    background-color: var(--yale-blue);
+    border: 2px solid var(--mint-cream);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px 0;
+    align-self: flex-end; /* Align user's bubble to the right */
+}
+
+.bottom-container {
+   width: 90%;
+   background-color: var(--yale-blue);
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   border-radius: 0 0 15px 15px; /* Matches rounded corners */
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: var(--mint-cream);
+    background-color: var(--yale-blue);
+}
+
+.group-name {
+    text-align: center;  /* Centers the text horizontally */
+    margin: 0;          /* Remove default margin */
+    padding: 10px;      /* Optional: Add some padding for better spacing */
+}
